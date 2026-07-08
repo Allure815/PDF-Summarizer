@@ -27,10 +27,15 @@ This project solves that problem by **automatically extracting and summarizing t
 **⚙️ Key Features**
 
 📤 PDF upload via a simple Streamlit interface
+
 📑 Robust text extraction across all pages using pypdf, with graceful handling of unreadable pages
+
 🧹 Text cleaning (whitespace/newline normalization) to prepare raw extracted text for NLP
+
 ✂️ Smart chunking with LangChain's RecursiveCharacterTextSplitter (800-char chunks, 100-char overlap) so long documents are split without breaking sentences mid-thought
+
 🧠 Per-chunk summarization, merged into one final summary
+
 ⚡ Cached model loading (@st.cache_resource) so the app stays responsive across repeated runs
 
 ----
@@ -71,9 +76,13 @@ Current state: the summarization step uses a lightweight extractive placeholder 
 ## Tech Stack
 
 -PDF Extraction: pypdf
+
 -Chunking: LangChain (RecursiveCharacterTextSplitter)
+
 -Interface: Streamlit
+
 -Language: Python
+
 -Planned: HuggingFace Transformers, PyTorch (abstractive summarization model)
 
 ---
@@ -122,10 +131,13 @@ Upload a PDF and click Generate Summary to run the full pipeline.
 **🔭 What's Next**
 
 
-Swap the placeholder summarizer for a real HuggingFace abstractive summarization model (facebook/bart-large-cnn or a lighter distilbart variant) — top priority, dependencies are already in place
-Add downloadable summary output (PDF/TXT export)
-Support multi-document summarization in a single session
-Add chunk-level source tracking so each summary line can be traced back to its page
+-Swap the placeholder summarizer for a real HuggingFace abstractive summarization model (facebook/bart-large-cnn or a lighter distilbart variant) — top priority, dependencies are already in place
+
+-Add downloadable summary output (PDF/TXT export)
+
+-Support multi-document summarization in a single session
+
+-Add chunk-level source tracking so each summary line can be traced back to its page
 
 ---
 
