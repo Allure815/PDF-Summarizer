@@ -10,6 +10,8 @@ An end-to-end PDF processing pipeline — upload a PDF, extract and clean its te
 Long PDFs — reports, research papers, study material — take real time to get through. This project automates the front half of that problem: reliably pulling clean, structured text out of any PDF and preparing it in chunks sized for downstream NLP, the same pipeline shape used in production document-intelligence and RAG systems.
 
 Input: any PDF file → Output: cleaned text, chunked, and summarized section by section.
+
+
 ---
 
 
@@ -17,7 +19,6 @@ Input: any PDF file → Output: cleaned text, chunked, and summarized section by
 
 Many PDFs such as reports, research papers, and study materials are long and time-consuming to read.
 Manually going through these documents can take a lot of effort.
-
 This project solves that problem by **automatically extracting and summarizing the most important information from a PDF file.**
 
 ---
